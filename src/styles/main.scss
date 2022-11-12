@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './components/header';
+@import './components/posts';
+@import './components/instagram';
+@import './components/footer';
+@import './base/reset';
+@import './components/btn-menu';

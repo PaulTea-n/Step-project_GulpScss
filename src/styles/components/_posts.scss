@@ -1,0 +1,88 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+// ---------
+.section__posts {
+    padding: 38px 25px;
+    padding-bottom: 0px;
+    @include style-text-title;
+    color: $primery-color;
+    @media (min-width: $tablet-bp) {
+        padding: 56px 80px;
+    }
+    @media (min-width: $desck-bp) {
+        padding: 0px 215px;
+    }
+}
+
+.section__posts--post {
+    @media (min-width: $desck-bp) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+.section__posts--item {
+    margin-bottom: 25px;
+    @media (min-width: $tablet-bp) {
+        display: flex;
+    }
+}
+
+.section__posts--title {
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    font-size: 14px;
+    @media (min-width: $tablet-bp) {
+        font-size: 16px;
+    }
+}
+
+.section__posts--first-item {
+    line-height: 30px;
+    font-size: 14px;
+    @media (min-width: $tablet-bp) {
+        font-size: 16px;
+    }
+}
+
+.section__posts--second-item {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: $text-coments-color;
+    @media (min-width: $tablet-bp) {
+        font-size: 12px;
+        margin-top: 1px;
+    }
+}
+
+.section__posts--text {
+    display: none;
+    @media (min-width: $tablet-bp) {
+        display: block;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 13px;
+    }
+}
+
+.last-item {
+    display: none;
+    @media (min-width: $tablet-bp) {
+        display: flex;
+    }
+}
+
+.section--text-block {
+    @media (min-width: $tablet-bp) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 21px;
+    }
+}

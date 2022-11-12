@@ -1,0 +1,13 @@
+.header__button {
+    border: none;
+    background-color: black;
+    float: right;
+    margin: 23px 28px 23px 0;
+    @media (min-width: $tablet-bp) {
+        display: none;
+    }
+}
+
+.closeIcon {
+    display: none;
+}

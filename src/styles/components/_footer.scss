@@ -1,0 +1,76 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+// ----------
+.footer {
+    padding: 38px 0 47px;
+    background-color: $footer-bg-color;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: $footer-text-color;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    @media (min-width: $tablet-bp) {
+        padding: 57px 0 56px;
+    }
+    @media(min-width: $desck-bp) {
+        padding: 66px 0 70px;
+    }
+}
+
+.footer__title {
+    h1 {
+        color: $footer-title-text;
+        @include style-text-title;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+
+.footer__title--parag-mob {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 35px 26px;
+    @media (min-width: $tablet-bp) {
+        display: none;
+    }
+}
+
+.footer__title--parag-tab {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 35px 26px;
+    display: none;
+    @media (min-width: $tablet-bp) {
+        display: block;
+        padding: 22px 0 37px;
+    }
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__icon-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 5px;
+    @media (min-width: $tablet-bp) {
+        column-gap: 6px;
+    }
+}
+
+.footer__contacts {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 24px;
+    @media (min-width: $tablet-bp) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 34px;
+    }
+}
